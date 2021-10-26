@@ -16,14 +16,17 @@ public:
     int getX() {return x;}
 
 private:
-    int x;
+    int x = 0;
 };
 
 class Derived: public Base1 {
 public:
-    Derived(int x, int y): Base1(x), y(y) {
+    Derived(int x, int y): Base1(), y(y) {
         cout << "Derived constuctor called" << endl;
     }
+    
+    int getY() {return y;}
+
 private:
     int y; // inner object
 };
@@ -31,6 +34,7 @@ private:
 int main()
 {
     Derived obj(1, 2);
+    cout << obj.getX() << " " << obj.getY() << endl;
     return 0;
 }
 
