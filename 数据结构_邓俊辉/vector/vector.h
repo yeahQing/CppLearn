@@ -8,10 +8,11 @@ typedef int Rank;
 template <typename T>
 class Vector {
 protected:
-    Rank _size;
-    int _capacity;
-    T* _elem;
+    Rank _size; // 动态数组(向量)的规模
+    int _capacity;  // 动态数组(向量)的容量
+    T* _elem;   // 动态数组(向量)的数据区
 	// TODO
+    void copyFrom(T const* A, Rank lo, Rank hi);
 public:
     // TODO
     // 构造函数
