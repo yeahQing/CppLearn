@@ -13,6 +13,8 @@ protected:
     T* _elem;   // 动态数组(向量)的数据区
 	// TODO
     void copyFrom(T const* A, Rank lo, Rank hi);
+    void expand();
+    void shrink();
 public:
     // TODO
     // 构造函数
