@@ -158,4 +158,37 @@ git branch -d  Chapater6
 - 删除里面的HEAD文件或者所有文件
 - 然后运行git fetch –all
 
+# 更新git版本
+
+## 更新windows下的git版本
+
+查看git版本
+
+```bash
+git --version / git version
+```
+
+更新
+
+git版本是2.17.1之前的话使用 git update
+git版本是2.17.1之后的话使用 git update-git-for-windows
+
+## 更新ubuntu下的git版本
+
+查看git版本
+
+```bash
+
+git --version
+
+```
+
+升级
+
+sudo apt update  # 更新源
+sudo apt install software-properties-common # 安装 PPA 需要的依赖
+sudo add-apt-repository ppa:git-core/ppa    # 向 PPA 中添加 git 的软件源
+sudo apt-get update
+sudo apt-get install git
+
 
