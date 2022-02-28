@@ -141,3 +141,10 @@ git push origin --delete Chapater6
 删除本地分支 Chapater6
 git branch -d  Chapater6
 
+# 合并本地分支并提交到远程分支
+
+假设我们在本地dev分支上进行了修改，现在需要和远程的main分支合并。
+我们可以先切换到本地的main分支上，之后拉取远程main分支，
+使用git merge dev将本地main分支和本地dev分支合并
+之后使用git push origin main提交合并后的代码
+
