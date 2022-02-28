@@ -1,3 +1,31 @@
-# This is a personal learning note for cpp learning.
+# 介绍
 
-In this repository, I will load some code my written during learning. Hope it will help me a lot.
+这个仓库主要记录个人学习C++的代码
+
+# 主要内容
+
+1. C++基础知识
+2. C++STL库
+3. 数据结构与算法
+4. leetcode刷题笔记
+5. 牛客刷题笔记
+6. 计算机网络
+7. 操作系统
+8. 数据库(Mysql和Redis)
+9. 实践项目(Web服务器)
+
+# 当前进度:
+ 
+## C++基础知识
+
+虚函数的用法
+
+## C++STL库
+
+vector
+
+## 数据结构与算法
+
+
+
+
