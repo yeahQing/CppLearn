@@ -148,3 +148,14 @@ git branch -d  Chapater6
 使用git merge dev将本地main分支和本地dev分支合并
 之后使用git push origin main提交合并后的代码
 
+# Git常见警告和错误
+
+## Git:warning: ignoring broken ref refs/remotes/origin/HEAD
+
+这个问题最初是我在git remote add添加了一个新的远端仓库引用时遇到的，当时起的名字时mytest，之后我在使用git branch -a时遇到了这个警告，这里可以通过删除./.git/refs/remotes/mytest来解决
+
+- 找到.git目录下refs/remotes/origin目录（子模块的这个目录是在主模块的.git目录下，因为子模块没有.git目录）
+- 删除里面的HEAD文件或者所有文件
+- 然后运行git fetch –all
+
+
