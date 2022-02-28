@@ -68,6 +68,22 @@ git rebase
 
 git rm --cached .
 
+## git rm
+
+当我们需要删除暂存区或分支上的文件, 同时工作区也不需要这个文件了, 可以使用
+
+git rm file_path
+git commit -m 'delete somefile'
+git push origin main:main
+
+## git rm --cached
+
+当我们需要删除暂存区或分支上的文件, 但本地又需要使用, 只是不希望这个文件被版本控制, 可以使用
+
+git rm --cached file_path
+git commit -m 'delete remote somefile'
+git push origin main:main
+
 # 使用github token提交
 使用下面的命令:
 
@@ -90,8 +106,27 @@ git remote rm origin
 git checkout -b 等价于 git branch new_branch_name + git checkout new_branch_name
 git checkout -b new_branch_name 创建并切换到新的本地分支
 
-git push origin new_branch_name 这里如果名字不一样也可以
+git push [-f] [--set-upstream] [远端名称] [本地分支名][:远端分支名]
 
+将仓库里的更新都抓取到本地，不会进行合并
+git fetch [remote name] [branch name]
 
+拉取远端仓库的修改拉到本地自动进行合并，等同于fetch+merge
+git pull [remote name] [branch name]
+
+查看本地分支与远程分支的绑定关系
+git branch -vv
+
+如果没有绑定关系，就将本地分支main和远程分支main绑定关系
+git push --set-upstream origin main:main
+
+# 修改分支名
+git branch -m [原名称] [新名称]
+
+# 删除分支名
+git branch -d [分支名称]
+
+# 删除远程分支
+git push origin :[远程分支名]
 
 
