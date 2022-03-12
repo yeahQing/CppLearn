@@ -1,0 +1,1 @@
+g++ main.cpp mutexlock.h mutex.cpp mutex.h -o test_mutexlock -lpthread

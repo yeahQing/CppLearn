@@ -1,0 +1,44 @@
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <list>
+#include <map>
+#include <unordered_map>
+#include <string>
+
+
+using namespace std;
+
+struct ListNode {
+	
+	int var;
+	ListNode* next;
+	ListNode(int v): var(v), next(nullptr) {}
+
+};
+
+int main()
+{
+	int n;
+	cin >> n;
+	vector<int> v(n, 0);
+	
+	string s = "Hello, World!";
+
+	int i = 0;
+	unordered_map<int, ListNode*> dic;
+
+	if (dic.find(++i) != dic.end()) {
+		cout << dic[i] << endl;
+	}
+	else
+	{
+		cout << "Not found!" << endl;
+	}
+	
+	string new_str = s.substr(0, 5);
+	
+	cout << new_str << endl;
+
+	return 0;
+}

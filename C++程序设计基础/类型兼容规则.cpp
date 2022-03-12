@@ -15,14 +15,14 @@ public:
     void display() const {
         cout << "Base2::display()" << endl;
     }
-}
+};
 
 class Derived: public Base2 {
 public:
     void display() const {
         cout << "Derived::display()" << endl;
     }
-}
+};
 
 void fun(Base1* ptr)
 {
